@@ -73,8 +73,8 @@ class Chiffrement:
         for i in [ chr(i) for i in range(97,123) ][:n]:
             rotn.append(i)
 
-        for y in range(0,26):
-            for i in range(0,len(key)):
+        for i in range(0,len(key)):
+            for y in range(0,26):
                 
                 if key[i] == alphabet[y]:
                     final.append(rotn[y])
